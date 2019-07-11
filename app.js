@@ -3,7 +3,4 @@ var bodyParser = require('body-parser'),
     express = require('express'),
     app = express();
 
-    
-    
-    
-
+mongoose.connect("mongodb://localhost:27017/blog_app", { useNewUrlParser: true });
