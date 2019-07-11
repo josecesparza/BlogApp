@@ -19,13 +19,17 @@ var blogSchema = new mongoose.Schema({
 
 var Blog = mongoose.model("Blog", blogSchema);
 
-Blog.create({
-    title: "Test Blog",
-    image: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-    body: "HEllo this is a Blog Post!"
-});
+// Blog.create({
+//     title: "Test Blog",
+//     image: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+//     body: "HEllo this is a Blog Post!"
+// });
 
 //RESTFUL ROUTES
+
+app.get("/blogs", function(req, res){
+    res.render("index");
+});
 
 app.listen(3000, process.env.IP, function(){
     console.log("Blog App Server is running!");
