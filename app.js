@@ -83,6 +83,11 @@ app.get("/blogs/:id/edit", function (req, res) {
     });
 });
 
+//UPDATE ROUTE
+app.put("/blogs/:id", function(req, res){
+
+});
+
 app.listen(3000, process.env.IP, function () {
     console.log("Blog App Server is running!");
 });
