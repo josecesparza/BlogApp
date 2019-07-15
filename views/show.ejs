@@ -9,7 +9,6 @@
                 <span><%= blog.created.toDateString() %></span>
             </div>
             <div class="description">
-                <!-- <&- instead of <%= is to render the text as code -->
                 <p><%- blog.body %></p> 
             </div>
             <a class="ui orange basic button" href="/blogs/<%= blog._id %>/edit">Edit</a>
